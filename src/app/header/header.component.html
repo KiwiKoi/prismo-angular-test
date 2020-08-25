@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">PRISMO</a>
+  <div>
+    <ul ngbNav #nav="ngbNav" class="nav-pills nav-justified">
+      <li routerLinkActive="active current" ngbNavItem>
+        <a ngbNavLink routerLink="/">Accueil</a>
+      </li>
+      <li routerLinkActive="active current" ngbNavItem>
+        <a ngbNavLink routerLink="/members-list">Membres</a>
+      </li>
+    </ul>
+  </div>
+
+  <div [ngbNavOutlet]="nav"></div>
+</nav>
