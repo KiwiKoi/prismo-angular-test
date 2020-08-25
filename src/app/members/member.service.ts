@@ -14,4 +14,10 @@ export class MemberService {
   getMembers(): Observable<Member[]> {
     return of(MEMBERS);
   }
+
+  getMember(id: number | string) {
+    return this.getMembers().pipe(
+      map((members: Member[]) => members.find((member) => member.id === +id))
+    );
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import members from '../../assets/members.json';
 
 @Component({
   selector: 'app-member-card',

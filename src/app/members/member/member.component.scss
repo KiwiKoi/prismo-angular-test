@@ -1,9 +1,24 @@
+h3,
+h2 {
+  text-align: center;
+}
+
+div {
+  margin: auto;
+}
+
 img {
   margin: auto;
   height: 100px;
   width: 100px;
 }
 
+button {
+  margin: auto;
+}
+
 .card {
   height: 85vh;
+  width: 50vw;
+  padding: 50px;
 }

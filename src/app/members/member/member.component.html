@@ -1,4 +1,3 @@
-<h2 class="component-title">Member Profile</h2>
 <div *ngIf="member$ | async as member">
   <div class="card">
     <h3>{{ member.firstname }} {{ member.lastname }}</h3>
@@ -15,8 +14,9 @@
     <div>
       <p>{{ member.description }}</p>
     </div>
-    <p>
-      <button (click)="gotoMembers(member)">Back</button>
-    </p>
+
+    <button class="btn btn-secondary" (click)="gotoMembers(member)">
+      Retour à la liste
+    </button>
   </div>
 </div>

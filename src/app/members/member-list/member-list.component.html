@@ -17,13 +17,17 @@
           <div class="col-md-8">
             <div class="card-body">
               <h3 class="card-title">
-                {{ member.firstname }} {{ member.lastname }}
+                <a [routerLink]="['/member', member.id]"
+                  >{{ member.firstname }} {{ member.lastname }}</a
+                >
               </h3>
             </div>
           </div>
         </div>
       </div>
     </ul>
-    <button class="btn btn-secondary">Ajouter un membre</button>
+    <button routerLink="/create-member" class="btn btn-primary">
+      Ajouter un membre
+    </button>
   </div>
 </main>
