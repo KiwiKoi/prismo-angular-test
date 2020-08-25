@@ -1,0 +1,22 @@
+<h2 class="component-title">Member Profile</h2>
+<div *ngIf="member$ | async as member">
+  <div class="card">
+    <h3>{{ member.firstname }} {{ member.lastname }}</h3>
+    <div>
+      <img
+        src="../../assets/avatars/{{ member.avatar }}"
+        class="card-img-top"
+        alt="..."
+      />
+    </div>
+    <div>
+      <h3>{{ member.function }}</h3>
+    </div>
+    <div>
+      <p>{{ member.description }}</p>
+    </div>
+    <p>
+      <button (click)="gotoMembers(member)">Back</button>
+    </p>
+  </div>
+</div>
