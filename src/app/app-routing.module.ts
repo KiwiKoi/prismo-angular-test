@@ -6,7 +6,8 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { MemberComponent } from './members/member/member.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
+  { path: 'welcome', component: WelcomeComponent },
+  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
   {
     path: 'members-list',
     component: MemberListComponent,
